@@ -1,0 +1,106 @@
+.container{
+  max-width: 1140px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+}
+.App{
+  display: grid;
+  grid-template-columns: 25% 75%;
+  margin-top: 15px;
+
+}
+.video-wrapper video{
+  object-fit: cover;
+}
+.question-wrapper{
+  background-repeat: no-repeat;
+  height: 180px;
+  background-size: cover;
+  background-position: top center;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+
+}
+.avatar-service {
+  width: 36px;
+  height: 36px;
+  margin: 0px;
+  background-size: 36px 36px;
+  margin-right: 20px;
+  background-repeat: no-repeat;
+}
+.question-wrapper .top-header{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.question-wrapper .top-header .question{
+  background-color: rgba(0,0,0,.7);
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  max-width: 90%;
+  box-sizing: border-box;
+  font-weight: 600;
+}
+.question-wrapper .answers{
+  margin-top: auto;
+}
+.question-wrapper .answers .btn{
+  display: inline-block;
+  height: 42px;
+  transition: background-color 0s linear .3s;
+  padding: 0 15px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 0;
+  border-radius: 20px;
+  margin-right: 12px;
+  margin-bottom: 7px;
+}
+.question-wrapper .answers .btn-answer{
+  background-color: #f78f1e;
+  color: #fff;
+}
+.question-wrapper .answers a{
+  line-height: 2.4;
+}
+.question-wrapper .answers .btn-back{
+  background-color: #fff;
+  color: #000;
+}
+@media screen and (max-width:992px) {
+  .App{
+    grid-template-columns: 100%;
+    grid-row-gap: 20px;
+  
+  }
+  .question-wrapper .top-header{
+    flex-wrap: wrap;
+  }
+  .question-wrapper .top-header .question{
+    max-width: 100%;
+  }
+  .avatar-service {
+    width: 100%;
+    background-position: center;
+    margin-right: 0;
+    margin-bottom: 7px;
+}
+  .question-wrapper{
+    height: auto;
+
+  }
+  .question-wrapper .answers .btn{
+    height: auto;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+  .question-wrapper .answers a{
+    line-height: 1.3;
+  }
+}
